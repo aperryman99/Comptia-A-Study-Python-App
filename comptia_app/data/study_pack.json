@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "title": "CompTIA A+ Sprint Prep",
+    "subtitle": "A focused local study app for Core 1 and Core 2 review when the exam date is close.",
+    "exam_code_note": "Use this as a high-yield companion and still compare against your official current CompTIA exam objectives."
+  },
+  "domains": [
+    {
+      "name": "Hardware",
+      "exam": "Core 1",
+      "focus": "PC components, displays, storage, printers, connectors, and upgrade decisions.",
+      "must_know": [
+        "RAM generations and form factors",
+        "Storage interfaces: SATA, NVMe, M.2",
+        "Printer types and consumables",
+        "Display standards and troubleshooting clues"
+      ]
+    },
+    {
+      "name": "Networking",
+      "exam": "Core 1",
+      "focus": "Ports, protocols, TCP/IP basics, Wi-Fi, routers, switches, and network troubleshooting.",
+      "must_know": [
+        "Well-known ports like 20/21, 22, 23, 25, 53, 80, 110, 143, 389, 443, 3389",
+        "Subnet basics and DHCP/DNS roles",
+        "Wi-Fi standards, frequencies, and encryption",
+        "Common tools: ping, tracert, nslookup, toner, crimper"
+      ]
+    },
+    {
+      "name": "Mobile Devices",
+      "exam": "Core 1",
+      "focus": "Laptops, smartphones, tablets, accessories, batteries, and synchronization methods.",
+      "must_know": [
+        "Mobile display, battery, and port issues",
+        "NFC, Bluetooth, hotspot, tethering",
+        "Screen locks, biometrics, and remote wipe"
+      ]
+    },
+    {
+      "name": "Virtualization & Cloud",
+      "exam": "Core 1",
+      "focus": "VM concepts, cloud service models, shared responsibility, and resource pooling.",
+      "must_know": [
+        "Type 1 vs Type 2 hypervisors",
+        "IaaS, PaaS, SaaS",
+        "Elasticity, snapshots, and measured service"
+      ]
+    },
+    {
+      "name": "Troubleshooting",
+      "exam": "Core 1",
+      "focus": "The CompTIA troubleshooting methodology plus common hardware and network symptoms.",
+      "must_know": [
+        "6-step methodology in order",
+        "Power, overheating, POST, connectivity, and printer issues",
+        "Start simple and verify before escalating"
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "exam": "Core 2",
+      "focus": "Windows editions, tools, commands, macOS/Linux awareness, filesystems, and boot utilities.",
+      "must_know": [
+        "Windows administrative tools and commands",
+        "NTFS features and disk utilities",
+        "Basic macOS/Linux navigation and permissions"
+      ]
+    },
+    {
+      "name": "Security",
+      "exam": "Core 2",
+      "focus": "Physical security, malware types, authentication, least privilege, and secure SOHO practices.",
+      "must_know": [
+        "Malware symptoms and response",
+        "MFA, permissions, password policy, device hardening",
+        "Social engineering patterns"
+      ]
+    },
+    {
+      "name": "Software Troubleshooting",
+      "exam": "Core 2",
+      "focus": "Boot issues, malware symptoms, BSOD, application failures, and remediation steps.",
+      "must_know": [
+        "Safe Mode, recovery options, and system utilities",
+        "Browser issues, service failures, and startup symptoms",
+        "Malware removal best practices"
+      ]
+    },
+    {
+      "name": "Operational Procedures",
+      "exam": "Core 2",
+      "focus": "Safety, professionalism, backup awareness, documentation, scripting basics, and change management.",
+      "must_know": [
+        "ESD and safety practices",
+        "Ticket notes, escalation, and customer communication",
+        "Backups, change approval, and acceptable use awareness"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "domain": "Networking",
+      "front": "HTTPS",
+      "back": "TCP 443. Encrypted web traffic using TLS."
+    },
+    {
+      "domain": "Networking",
+      "front": "DNS",
+      "back": "Name resolution. Converts hostnames to IP addresses."
+    },
+    {
+      "domain": "Networking",
+      "front": "DHCP",
+      "back": "Dynamically assigns IP configuration to clients."
+    },
+    {
+      "domain": "Hardware",
+      "front": "SSD vs HDD",
+      "back": "SSD is faster and durable with no moving parts. HDD is slower but often cheaper per GB."
+    },
+    {
+      "domain": "Hardware",
+      "front": "RAID 1",
+      "back": "Mirroring for redundancy. Good fault tolerance, not a backup."
+    },
+    {
+      "domain": "Hardware",
+      "front": "RAID 5",
+      "back": "Striping with parity. Needs at least 3 disks."
+    },
+    {
+      "domain": "Mobile Devices",
+      "front": "NFC",
+      "back": "Short-range wireless used for tap-to-pay and quick pairing."
+    },
+    {
+      "domain": "Virtualization & Cloud",
+      "front": "IaaS",
+      "back": "Cloud model delivering compute, storage, and networking infrastructure."
+    },
+    {
+      "domain": "Virtualization & Cloud",
+      "front": "Hypervisor",
+      "back": "Platform that creates and runs virtual machines."
+    },
+    {
+      "domain": "Troubleshooting",
+      "front": "Step 1",
+      "back": "Identify the problem before changing anything."
+    },
+    {
+      "domain": "Operating Systems",
+      "front": "sfc /scannow",
+      "back": "Checks and repairs protected Windows system files."
+    },
+    {
+      "domain": "Operating Systems",
+      "front": "NTFS",
+      "back": "Windows filesystem with permissions, encryption, compression, and journaling."
+    },
+    {
+      "domain": "Security",
+      "front": "Least privilege",
+      "back": "Users get only the permissions needed to do their job."
+    },
+    {
+      "domain": "Security",
+      "front": "Phishing",
+      "back": "Social engineering attempt to steal credentials or sensitive information."
+    },
+    {
+      "domain": "Software Troubleshooting",
+      "front": "Safe Mode",
+      "back": "Boot mode using minimal drivers and services for diagnostics."
+    },
+    {
+      "domain": "Operational Procedures",
+      "front": "ESD strap",
+      "back": "Helps prevent electrostatic discharge damage while servicing hardware."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "AAA",
+      "meaning": "Authentication, authorization, and accounting."
+    },
+    {
+      "term": "BSOD",
+      "meaning": "Blue Screen of Death, a Windows stop error."
+    },
+    {
+      "term": "MFA",
+      "meaning": "Multi-factor authentication using two or more factor types."
+    },
+    {
+      "term": "RDP",
+      "meaning": "Remote Desktop Protocol, commonly on TCP 3389."
+    },
+    {
+      "term": "SOHO",
+      "meaning": "Small office/home office environment."
+    },
+    {
+      "term": "UEFI",
+      "meaning": "Modern firmware interface replacing legacy BIOS in many systems."
+    }
+  ],
+  "cram_sections": [
+    {
+      "title": "High-Value Ports",
+      "items": [
+        "FTP 20/21",
+        "SSH 22",
+        "Telnet 23",
+        "SMTP 25",
+        "DNS 53",
+        "HTTP 80",
+        "POP3 110",
+        "IMAP 143",
+        "LDAP 389",
+        "HTTPS 443",
+        "RDP 3389"
+      ]
+    },
+    {
+      "title": "Troubleshooting Methodology",
+      "items": [
+        "Identify the problem",
+        "Establish a theory of probable cause",
+        "Test the theory to determine cause",
+        "Establish a plan of action and implement the solution",
+        "Verify full system functionality and implement preventive measures",
+        "Document findings, actions, and outcomes"
+      ]
+    },
+    {
+      "title": "Wi-Fi Snapshot",
+      "items": [
+        "802.11n: 2.4 and 5 GHz",
+        "802.11ac: 5 GHz",
+        "802.11ax: 2.4, 5, and with 6E also 6 GHz",
+        "WPA2/WPA3 are preferred modern security choices"
+      ]
+    },
+    {
+      "title": "Windows Commands",
+      "items": [
+        "ipconfig",
+        "ping",
+        "tracert",
+        "nslookup",
+        "netstat",
+        "sfc /scannow",
+        "chkdsk",
+        "tasklist",
+        "taskkill"
+      ]
+    }
+  ],
+  "sprint_plan": [
+    "Spend the first pass hammering weak spots, not what already feels easy.",
+    "Alternate between timed quizzes and fast active recall with flashcards.",
+    "End each session with a 10-minute cram-sheet pass on ports, commands, and troubleshooting order.",
+    "Review explanations for every missed question, even when the right answer looked familiar."
+  ]
+}

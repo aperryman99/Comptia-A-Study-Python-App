@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ study_pack.meta.title }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body data-page="{{ page_name|default('dashboard') }}">
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand">
+                <p class="eyebrow">CompTIA A+ Prep</p>
+                <h1>{{ study_pack.meta.title }}</h1>
+                <p class="muted">{{ study_pack.meta.subtitle }}</p>
+            </div>
+
+            <nav class="nav-links">
+                <a href="/" class="{{ 'active' if request.path == '/' else '' }}">Dashboard</a>
+                <a href="/practice" class="{{ 'active' if request.path == '/practice' else '' }}">Practice Lab</a>
+                <a href="/flashcards" class="{{ 'active' if request.path == '/flashcards' else '' }}">Flashcards</a>
+                <a href="/cram" class="{{ 'active' if request.path == '/cram' else '' }}">Cram Sheet</a>
+            </nav>
+
+            <div class="sidebar-card">
+                <p class="eyebrow">Exam reminder</p>
+                <h3 id="days-remaining">Set your exam date</h3>
+                <p class="muted">The app will track countdown pressure locally in your browser.</p>
+                <label class="date-label" for="exam-date">Target date</label>
+                <input id="exam-date" type="date">
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+    <script>
+        window.__STUDY_PACK__ = {{ study_pack|tojson }};
+    </script>
+    <script src="/static/app.js"></script>
+</body>
+</html>

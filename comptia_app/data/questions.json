@@ -1,0 +1,582 @@
+[
+  {
+    "id": 1,
+    "domain": "Hardware",
+    "difficulty": "medium",
+    "question": "Which storage type uses NAND flash memory and has no moving parts?",
+    "options": ["HDD", "SSD", "LTO tape", "Blu-ray"],
+    "answer": "SSD",
+    "explanation": "Solid-state drives use flash memory, which makes them faster and more shock resistant than spinning disks."
+  },
+  {
+    "id": 2,
+    "domain": "Hardware",
+    "difficulty": "medium",
+    "question": "Which connector is commonly used to deliver video and audio to a monitor from a PC?",
+    "options": ["RJ45", "HDMI", "SATA", "PS/2"],
+    "answer": "HDMI",
+    "explanation": "HDMI carries digital video and audio over a single cable."
+  },
+  {
+    "id": 3,
+    "domain": "Hardware",
+    "difficulty": "hard",
+    "question": "What is the main advantage of DDR5 over DDR4 in typical A+ study terms?",
+    "options": ["Lower capacity", "Slower clock speeds", "Higher bandwidth", "Mechanical reliability"],
+    "answer": "Higher bandwidth",
+    "explanation": "DDR5 increases throughput and supports higher densities and speeds than DDR4."
+  },
+  {
+    "id": 4,
+    "domain": "Hardware",
+    "difficulty": "easy",
+    "question": "What component is considered the brain of the computer?",
+    "options": ["PSU", "CPU", "NIC", "Heat sink"],
+    "answer": "CPU",
+    "explanation": "The CPU executes instructions and coordinates system operations."
+  },
+  {
+    "id": 5,
+    "domain": "Networking",
+    "difficulty": "easy",
+    "question": "What port does HTTPS use by default?",
+    "options": ["80", "110", "443", "3389"],
+    "answer": "443",
+    "explanation": "HTTPS uses TCP 443 for encrypted web traffic."
+  },
+  {
+    "id": 6,
+    "domain": "Networking",
+    "difficulty": "medium",
+    "question": "Which protocol automatically assigns IP addresses on most networks?",
+    "options": ["DNS", "DHCP", "LDAP", "SNMP"],
+    "answer": "DHCP",
+    "explanation": "Dynamic Host Configuration Protocol leases IP settings to clients."
+  },
+  {
+    "id": 7,
+    "domain": "Networking",
+    "difficulty": "medium",
+    "question": "What does DNS do?",
+    "options": [
+      "Encrypts traffic end to end",
+      "Translates names to IP addresses",
+      "Blocks malicious packets",
+      "Assigns Wi-Fi channels"
+    ],
+    "answer": "Translates names to IP addresses",
+    "explanation": "DNS resolves hostnames like example.com into IP addresses."
+  },
+  {
+    "id": 8,
+    "domain": "Networking",
+    "difficulty": "hard",
+    "question": "Which Wi-Fi standard is associated with the 6 GHz band?",
+    "options": ["802.11ac", "802.11ax", "802.11n", "802.11g"],
+    "answer": "802.11ax",
+    "explanation": "Wi-Fi 6E extends 802.11ax into the 6 GHz spectrum."
+  },
+  {
+    "id": 9,
+    "domain": "Mobile Devices",
+    "difficulty": "easy",
+    "question": "Which biometric method uses the user's fingertip to authenticate?",
+    "options": ["NFC", "Fingerprint reader", "IR blaster", "GPS"],
+    "answer": "Fingerprint reader",
+    "explanation": "Fingerprint sensors are a common mobile device authentication feature."
+  },
+  {
+    "id": 10,
+    "domain": "Mobile Devices",
+    "difficulty": "medium",
+    "question": "Which mobile connection type is used for short-range tap-to-pay features?",
+    "options": ["NFC", "LTE", "USB-C", "Mini-PCIe"],
+    "answer": "NFC",
+    "explanation": "Near-field communication enables close-range data exchange such as contactless payments."
+  },
+  {
+    "id": 11,
+    "domain": "Mobile Devices",
+    "difficulty": "medium",
+    "question": "A smartphone battery is swelling. What is the safest first action?",
+    "options": [
+      "Puncture it to release pressure",
+      "Continue charging it fully",
+      "Power down and replace it safely",
+      "Freeze it overnight"
+    ],
+    "answer": "Power down and replace it safely",
+    "explanation": "A swollen lithium battery is a safety risk and should be removed from service."
+  },
+  {
+    "id": 12,
+    "domain": "Virtualization & Cloud",
+    "difficulty": "medium",
+    "question": "What is a hypervisor used for?",
+    "options": [
+      "Encrypting removable media",
+      "Hosting virtual machines",
+      "Blocking spam",
+      "Troubleshooting printers"
+    ],
+    "answer": "Hosting virtual machines",
+    "explanation": "A hypervisor allocates host resources and runs guest virtual machines."
+  },
+  {
+    "id": 13,
+    "domain": "Virtualization & Cloud",
+    "difficulty": "easy",
+    "question": "Which cloud model provides virtualized hardware resources on demand?",
+    "options": ["SaaS", "IaaS", "PaaS", "MFA"],
+    "answer": "IaaS",
+    "explanation": "Infrastructure as a Service provides compute, storage, and networking resources."
+  },
+  {
+    "id": 14,
+    "domain": "Virtualization & Cloud",
+    "difficulty": "hard",
+    "question": "What is the main benefit of snapshots in a virtual machine environment?",
+    "options": [
+      "They increase CPU clock speed",
+      "They replace backups permanently",
+      "They allow rollback to a previous VM state",
+      "They disable malware automatically"
+    ],
+    "answer": "They allow rollback to a previous VM state",
+    "explanation": "Snapshots capture a point-in-time state that can be restored during testing or recovery."
+  },
+  {
+    "id": 15,
+    "domain": "Troubleshooting",
+    "difficulty": "easy",
+    "question": "What is the first step of the CompTIA troubleshooting methodology?",
+    "options": [
+      "Establish a theory of probable cause",
+      "Document findings",
+      "Identify the problem",
+      "Verify full system functionality"
+    ],
+    "answer": "Identify the problem",
+    "explanation": "CompTIA emphasizes identifying the problem before theorizing or changing anything."
+  },
+  {
+    "id": 16,
+    "domain": "Troubleshooting",
+    "difficulty": "medium",
+    "question": "A user reports no network connectivity on one PC. What is a fast initial command to verify local TCP/IP stack health on Windows?",
+    "options": ["format", "ping 127.0.0.1", "cipher /w", "gpupdate /force"],
+    "answer": "ping 127.0.0.1",
+    "explanation": "Pinging localhost verifies the local stack is responding before moving deeper into network diagnostics."
+  },
+  {
+    "id": 17,
+    "domain": "Operating Systems",
+    "difficulty": "easy",
+    "question": "Which Windows utility is used to inspect and end running processes?",
+    "options": ["Task Manager", "Disk Cleanup", "Event Viewer", "Registry Editor"],
+    "answer": "Task Manager",
+    "explanation": "Task Manager shows processes, performance data, and lets you end tasks."
+  },
+  {
+    "id": 18,
+    "domain": "Operating Systems",
+    "difficulty": "medium",
+    "question": "Which file system is most commonly used by modern Windows systems?",
+    "options": ["ext4", "NTFS", "FAT12", "HFS+"],
+    "answer": "NTFS",
+    "explanation": "NTFS supports permissions, encryption, compression, quotas, and journaling."
+  },
+  {
+    "id": 19,
+    "domain": "Operating Systems",
+    "difficulty": "medium",
+    "question": "What command checks the integrity of protected Windows system files?",
+    "options": ["ipconfig", "sfc /scannow", "fdisk", "bootrec /rebuild"],
+    "answer": "sfc /scannow",
+    "explanation": "System File Checker scans and repairs corrupted protected OS files."
+  },
+  {
+    "id": 20,
+    "domain": "Security",
+    "difficulty": "easy",
+    "question": "Phishing is best described as what?",
+    "options": [
+      "A social engineering attack",
+      "A file compression standard",
+      "A type of backup rotation",
+      "A wireless encryption protocol"
+    ],
+    "answer": "A social engineering attack",
+    "explanation": "Phishing tricks users into revealing credentials or other sensitive information."
+  },
+  {
+    "id": 21,
+    "domain": "Security",
+    "difficulty": "medium",
+    "question": "What security principle gives a user only the access required to do their job?",
+    "options": ["Open permissions", "Least privilege", "Single sign-on", "Fault tolerance"],
+    "answer": "Least privilege",
+    "explanation": "Least privilege reduces risk by limiting access rights."
+  },
+  {
+    "id": 22,
+    "domain": "Security",
+    "difficulty": "hard",
+    "question": "Which authentication method combines something you know with something you have?",
+    "options": ["MFA", "ACL", "RAID", "NAT"],
+    "answer": "MFA",
+    "explanation": "Multi-factor authentication requires multiple factor types, such as a password and a token."
+  },
+  {
+    "id": 23,
+    "domain": "Software Troubleshooting",
+    "difficulty": "medium",
+    "question": "A browser is redirecting to strange sites after an extension install. What is the most likely issue?",
+    "options": ["Screen burn-in", "Malicious add-on or malware", "Failed UPS", "BIOS checksum error"],
+    "answer": "Malicious add-on or malware",
+    "explanation": "Unexpected browser redirects often point to malicious extensions, adware, or malware."
+  },
+  {
+    "id": 24,
+    "domain": "Software Troubleshooting",
+    "difficulty": "medium",
+    "question": "Which Windows boot option starts the system with minimal drivers and services?",
+    "options": ["Safe Mode", "Dual boot", "PXE boot", "Fast startup"],
+    "answer": "Safe Mode",
+    "explanation": "Safe Mode strips the system down to core components for troubleshooting."
+  },
+  {
+    "id": 25,
+    "domain": "Operational Procedures",
+    "difficulty": "easy",
+    "question": "Why is documentation important during troubleshooting?",
+    "options": [
+      "It replaces backups",
+      "It prevents updates",
+      "It preserves findings, actions, and outcomes",
+      "It disables user accounts"
+    ],
+    "answer": "It preserves findings, actions, and outcomes",
+    "explanation": "Good documentation supports repeatability, handoff, compliance, and future troubleshooting."
+  },
+  {
+    "id": 26,
+    "domain": "Operational Procedures",
+    "difficulty": "medium",
+    "question": "Which safety item helps protect components from electrostatic discharge?",
+    "options": ["Loopback plug", "ESD strap", "Tone generator", "Crimper"],
+    "answer": "ESD strap",
+    "explanation": "An ESD strap grounds the technician to reduce static discharge risk."
+  },
+  {
+    "id": 27,
+    "domain": "Operational Procedures",
+    "difficulty": "hard",
+    "question": "What should be done before performing major maintenance that may impact users?",
+    "options": [
+      "Skip approvals to save time",
+      "Ignore backups if the system worked yesterday",
+      "Communicate the change and follow change-management practices",
+      "Disable all logging"
+    ],
+    "answer": "Communicate the change and follow change-management practices",
+    "explanation": "Change management reduces risk and keeps stakeholders informed before disruptive work."
+  },
+  {
+    "id": 28,
+    "domain": "Networking",
+    "difficulty": "medium",
+    "question": "Which record type maps a hostname to an IPv4 address?",
+    "options": ["MX", "AAAA", "A", "TXT"],
+    "answer": "A",
+    "explanation": "An A record maps a name to an IPv4 address, while AAAA is for IPv6."
+  },
+  {
+    "id": 29,
+    "domain": "Security",
+    "difficulty": "medium",
+    "question": "What kind of malware pretends to be legitimate software to trick users into installing it?",
+    "options": ["Trojan", "Worm", "Rootkit", "Keylogger"],
+    "answer": "Trojan",
+    "explanation": "A Trojan disguises itself as something legitimate to gain execution."
+  },
+  {
+    "id": 30,
+    "domain": "Operating Systems",
+    "difficulty": "hard",
+    "question": "Which command shows the current IP configuration on Windows?",
+    "options": ["dir", "ipconfig", "tracert", "nslookup"],
+    "answer": "ipconfig",
+    "explanation": "ipconfig displays IP, gateway, and adapter configuration details."
+  },
+  {
+    "id": 31,
+    "domain": "Hardware",
+    "difficulty": "easy",
+    "question": "Which laptop component commonly allows an external display connection?",
+    "options": ["RJ11", "HDMI", "Molex", "eSATAp"],
+    "answer": "HDMI",
+    "explanation": "HDMI is a common digital video output on laptops and desktops."
+  },
+  {
+    "id": 32,
+    "domain": "Hardware",
+    "difficulty": "medium",
+    "question": "Which printer type typically uses toner instead of liquid ink?",
+    "options": ["Impact printer", "Thermal printer", "Laser printer", "Inkjet printer"],
+    "answer": "Laser printer",
+    "explanation": "Laser printers fuse toner to the page using heat."
+  },
+  {
+    "id": 33,
+    "domain": "Hardware",
+    "difficulty": "medium",
+    "question": "What motherboard expansion slot is commonly used for modern graphics cards?",
+    "options": ["PCIe x16", "AGP", "PCI", "Mini-PCI"],
+    "answer": "PCIe x16",
+    "explanation": "Modern discrete GPUs typically use the PCI Express x16 slot."
+  },
+  {
+    "id": 34,
+    "domain": "Hardware",
+    "difficulty": "hard",
+    "question": "What does POST stand for during system startup?",
+    "options": ["Power-On Self-Test", "Primary Operating System Task", "Peripheral Output Signal Test", "Power Output Safety Timer"],
+    "answer": "Power-On Self-Test",
+    "explanation": "POST is the hardware self-check sequence during boot."
+  },
+  {
+    "id": 35,
+    "domain": "Networking",
+    "difficulty": "easy",
+    "question": "What device primarily forwards traffic between different networks?",
+    "options": ["Switch", "Router", "Patch panel", "Repeater"],
+    "answer": "Router",
+    "explanation": "Routers connect networks and forward packets between them."
+  },
+  {
+    "id": 36,
+    "domain": "Networking",
+    "difficulty": "medium",
+    "question": "Which command helps trace the path packets take to a destination on Windows?",
+    "options": ["format", "pathping", "tracert", "routeprint"],
+    "answer": "tracert",
+    "explanation": "tracert shows each hop between the source and destination."
+  },
+  {
+    "id": 37,
+    "domain": "Networking",
+    "difficulty": "medium",
+    "question": "Which cable type uses twisted copper pairs and an RJ45 connector?",
+    "options": ["Coaxial", "Fiber", "Ethernet twisted pair", "Serial"],
+    "answer": "Ethernet twisted pair",
+    "explanation": "Standard Ethernet copper cabling uses twisted pairs terminated with RJ45 connectors."
+  },
+  {
+    "id": 38,
+    "domain": "Networking",
+    "difficulty": "hard",
+    "question": "Which wireless security option is the strongest modern choice for a home network when available?",
+    "options": ["WEP", "WPA", "WPA2", "WPA3"],
+    "answer": "WPA3",
+    "explanation": "WPA3 is the current preferred consumer wireless security standard when supported."
+  },
+  {
+    "id": 39,
+    "domain": "Mobile Devices",
+    "difficulty": "easy",
+    "question": "What connection method lets a phone share its internet connection with a laptop?",
+    "options": ["Tethering", "Mirroring", "NATting", "Tokenizing"],
+    "answer": "Tethering",
+    "explanation": "Tethering shares a mobile device data connection over USB, Wi-Fi, or Bluetooth."
+  },
+  {
+    "id": 40,
+    "domain": "Mobile Devices",
+    "difficulty": "medium",
+    "question": "Which mobile accessory is used for hands-free audio over short distances?",
+    "options": ["Bluetooth headset", "Docking station", "Projector", "Smart card reader"],
+    "answer": "Bluetooth headset",
+    "explanation": "Bluetooth is commonly used for headsets, earbuds, and other short-range peripherals."
+  },
+  {
+    "id": 41,
+    "domain": "Mobile Devices",
+    "difficulty": "hard",
+    "question": "A user needs to wipe a lost company phone remotely. Which feature matters most?",
+    "options": ["Airplane mode", "Remote wipe through management tools", "Screen timeout", "Auto-brightness"],
+    "answer": "Remote wipe through management tools",
+    "explanation": "Remote wipe helps protect company data on lost or stolen devices."
+  },
+  {
+    "id": 42,
+    "domain": "Virtualization & Cloud",
+    "difficulty": "easy",
+    "question": "Which cloud model delivers finished applications to end users over the internet?",
+    "options": ["IaaS", "SaaS", "PaaS", "Hypervisor as a Service"],
+    "answer": "SaaS",
+    "explanation": "Software as a Service provides complete applications such as email or office suites."
+  },
+  {
+    "id": 43,
+    "domain": "Virtualization & Cloud",
+    "difficulty": "medium",
+    "question": "What is a key benefit of elasticity in cloud computing?",
+    "options": ["Permanent single-size infrastructure", "Scaling resources up or down as needed", "No need for authentication", "Removing all service costs"],
+    "answer": "Scaling resources up or down as needed",
+    "explanation": "Elasticity lets workloads use more or fewer resources based on demand."
+  },
+  {
+    "id": 44,
+    "domain": "Virtualization & Cloud",
+    "difficulty": "hard",
+    "question": "Which hypervisor type typically runs directly on the hardware?",
+    "options": ["Type 1", "Type 2", "Container engine", "Remote desktop host"],
+    "answer": "Type 1",
+    "explanation": "Type 1 hypervisors are bare-metal platforms that run directly on host hardware."
+  },
+  {
+    "id": 45,
+    "domain": "Troubleshooting",
+    "difficulty": "easy",
+    "question": "After implementing a fix, what troubleshooting step comes next before final documentation?",
+    "options": ["Replace all nearby hardware", "Verify full system functionality", "Reinstall the OS", "Escalate immediately"],
+    "answer": "Verify full system functionality",
+    "explanation": "You verify the fix worked and apply preventive measures before wrapping up."
+  },
+  {
+    "id": 46,
+    "domain": "Troubleshooting",
+    "difficulty": "medium",
+    "question": "A PC shuts down unexpectedly under load. What is a common probable cause?",
+    "options": ["Too many desktop icons", "Overheating", "Wrong wallpaper size", "Disabled Bluetooth"],
+    "answer": "Overheating",
+    "explanation": "Thermal issues often appear when the system is stressed."
+  },
+  {
+    "id": 47,
+    "domain": "Troubleshooting",
+    "difficulty": "hard",
+    "question": "Which approach best matches good troubleshooting practice?",
+    "options": ["Try many major changes at once", "Change one thing at a time and test", "Ignore user reports", "Start with the most expensive replacement"],
+    "answer": "Change one thing at a time and test",
+    "explanation": "Controlled changes make it easier to identify the real cause."
+  },
+  {
+    "id": 48,
+    "domain": "Operating Systems",
+    "difficulty": "easy",
+    "question": "Which Windows tool is commonly used to review system and application logs?",
+    "options": ["Task Scheduler", "Device Manager", "Event Viewer", "MS Paint"],
+    "answer": "Event Viewer",
+    "explanation": "Event Viewer helps investigate errors, warnings, and system events."
+  },
+  {
+    "id": 49,
+    "domain": "Operating Systems",
+    "difficulty": "medium",
+    "question": "Which utility manages disk partitions in Windows?",
+    "options": ["Disk Management", "Resource Monitor", "Services", "Regedit"],
+    "answer": "Disk Management",
+    "explanation": "Disk Management is used for partitions, volumes, and drive-letter tasks."
+  },
+  {
+    "id": 50,
+    "domain": "Operating Systems",
+    "difficulty": "hard",
+    "question": "Which Linux command changes file permissions?",
+    "options": ["pwd", "chmod", "grep", "mvdir"],
+    "answer": "chmod",
+    "explanation": "chmod modifies permission bits on files and directories."
+  },
+  {
+    "id": 51,
+    "domain": "Security",
+    "difficulty": "easy",
+    "question": "What is malware that can spread on its own across networks without user action commonly called?",
+    "options": ["Worm", "Trojan", "Spyware", "Ad blocker"],
+    "answer": "Worm",
+    "explanation": "A worm self-propagates across systems and networks."
+  },
+  {
+    "id": 52,
+    "domain": "Security",
+    "difficulty": "medium",
+    "question": "Which practice helps protect data on a stolen laptop?",
+    "options": ["Using larger icons", "Full-disk encryption", "Installing more fonts", "Defragmenting weekly"],
+    "answer": "Full-disk encryption",
+    "explanation": "Full-disk encryption helps keep data unreadable if the device is lost or stolen."
+  },
+  {
+    "id": 53,
+    "domain": "Security",
+    "difficulty": "hard",
+    "question": "Which attack attempts to deceive users through fake urgency, fear, or authority cues?",
+    "options": ["Social engineering", "RAID striping", "Port forwarding", "Load balancing"],
+    "answer": "Social engineering",
+    "explanation": "Social engineering manipulates people rather than exploiting hardware directly."
+  },
+  {
+    "id": 54,
+    "domain": "Software Troubleshooting",
+    "difficulty": "easy",
+    "question": "An application crashes right after an update. What is a reasonable early step?",
+    "options": ["Check for compatibility or roll back the update", "Replace the motherboard", "Change monitor cables", "Delete user profiles immediately"],
+    "answer": "Check for compatibility or roll back the update",
+    "explanation": "Recent software changes are a common root cause and should be reviewed first."
+  },
+  {
+    "id": 55,
+    "domain": "Software Troubleshooting",
+    "difficulty": "medium",
+    "question": "Which symptom often suggests insufficient RAM or too many running processes?",
+    "options": ["Slow application switching", "Paper jams", "Loose power cable", "Bad Ethernet punchdown"],
+    "answer": "Slow application switching",
+    "explanation": "Low memory pressure can make multitasking and app switching sluggish."
+  },
+  {
+    "id": 56,
+    "domain": "Software Troubleshooting",
+    "difficulty": "hard",
+    "question": "A machine boots to a blue screen after a driver install. What should you suspect first?",
+    "options": ["A likely driver conflict or bad driver", "Weak Wi-Fi signal", "Dirty keyboard", "Expired SSL certificate"],
+    "answer": "A likely driver conflict or bad driver",
+    "explanation": "Recent driver changes are a high-probability cause of BSODs."
+  },
+  {
+    "id": 57,
+    "domain": "Operational Procedures",
+    "difficulty": "easy",
+    "question": "What is the professional reason to use a ticketing system?",
+    "options": ["To avoid documenting work", "To track issues, actions, and handoff", "To block users from reporting issues", "To disable backups"],
+    "answer": "To track issues, actions, and handoff",
+    "explanation": "Ticketing supports accountability, handoff quality, and historical records."
+  },
+  {
+    "id": 58,
+    "domain": "Operational Procedures",
+    "difficulty": "medium",
+    "question": "Before working inside a PC, what should be done first?",
+    "options": ["Remove power and observe ESD safety", "Update the browser", "Clear DNS cache", "Reset all BIOS settings"],
+    "answer": "Remove power and observe ESD safety",
+    "explanation": "Power safety and ESD protection come before internal hardware work."
+  },
+  {
+    "id": 59,
+    "domain": "Operational Procedures",
+    "difficulty": "hard",
+    "question": "Which behavior best fits professionalism during user support?",
+    "options": ["Use heavy jargon to sound advanced", "Communicate clearly and set expectations", "Promise impossible repair times", "Skip documentation to work faster"],
+    "answer": "Communicate clearly and set expectations",
+    "explanation": "Clear communication and expectation-setting are core support skills."
+  },
+  {
+    "id": 60,
+    "domain": "Networking",
+    "difficulty": "hard",
+    "question": "Which command is most directly used to query DNS records from a client machine?",
+    "options": ["nslookup", "gpupdate", "diskpart", "mstsc"],
+    "answer": "nslookup",
+    "explanation": "nslookup queries DNS servers for name-resolution information."
+  }
+]

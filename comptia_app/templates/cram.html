@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% set page_name = "cram" %}
+{% block content %}
+<section class="hero compact-hero">
+    <div>
+        <p class="eyebrow">Cram sheet</p>
+        <h2>Last-mile facts to keep fresh.</h2>
+        <p class="hero-copy">
+            Use this page for quick passes before a practice set or at the end of a session.
+        </p>
+    </div>
+    <div class="hero-panel note-panel">
+        <p>{{ study_pack.meta.exam_code_note }}</p>
+    </div>
+</section>
+
+<section class="cram-grid">
+    {% for section in study_pack.cram_sections %}
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Rapid review</p>
+                <h3>{{ section["title"] }}</h3>
+            </div>
+        </div>
+        <div class="stack-list">
+            {% for item in section["items"] %}
+            <div class="stack-item">{{ item }}</div>
+            {% endfor %}
+        </div>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

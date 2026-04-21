@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% set page_name = "flashcards" %}
+{% block content %}
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Flashcards</p>
+            <h2>Fast active recall</h2>
+        </div>
+    </div>
+
+    <div class="quiz-setup">
+        <div>
+            <label for="flashcard-domain">Domain filter</label>
+            <select id="flashcard-domain">
+                <option value="All">All domains</option>
+                {% for domain in study_pack.domains %}
+                <option value="{{ domain.name }}">{{ domain.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="flashcard-controls">
+            <button class="button button-secondary" id="prev-card">Previous</button>
+            <button class="button button-primary" id="flip-card">Flip card</button>
+            <button class="button button-secondary" id="next-card">Next</button>
+        </div>
+    </div>
+
+    <div class="flashcard" id="flashcard">
+        <p class="eyebrow" id="flashcard-domain-label"></p>
+        <h2 id="flashcard-front"></h2>
+        <p id="flashcard-back" class="hidden"></p>
+    </div>
+
+    <div class="confidence-bar">
+        <span>Confidence check</span>
+        <div class="flashcard-controls">
+            <button class="button button-secondary confidence-btn" data-confidence="again">Needs work</button>
+            <button class="button button-secondary confidence-btn" data-confidence="almost">Almost there</button>
+            <button class="button button-primary confidence-btn" data-confidence="nailed">Locked in</button>
+        </div>
+    </div>
+</section>
+
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Recall stats</p>
+            <h3>What your card reviews say</h3>
+        </div>
+    </div>
+    <div id="flashcard-stats" class="metric-grid"></div>
+</section>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% set page_name = "practice" %}
+{% block content %}
+<section class="panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Practice lab</p>
+            <h2>Build a custom quiz block</h2>
+        </div>
+    </div>
+
+    <div class="quiz-setup">
+        <div>
+            <label for="question-count">Question count</label>
+            <select id="question-count">
+                <option value="10">10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="20">20 questions</option>
+                <option value="25">25 questions</option>
+                <option value="35">35 questions</option>
+                <option value="50">50 questions</option>
+                <option value="60">60 questions</option>
+            </select>
+        </div>
+        <div class="domain-selector" id="domain-selector">
+            {% for domain in study_pack.domains %}
+            <label class="chip">
+                <input type="checkbox" value="{{ domain.name }}" checked>
+                <span>{{ domain.name }}</span>
+            </label>
+            {% endfor %}
+        </div>
+        <button class="button button-primary" id="start-quiz">Start quiz</button>
+    </div>
+</section>
+
+<section class="panel hidden" id="quiz-panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Question flow</p>
+            <h3 id="quiz-progress">Question 1</h3>
+        </div>
+        <div class="progress-pill" id="quiz-domain-pill"></div>
+    </div>
+
+    <h2 id="quiz-question"></h2>
+    <div id="quiz-options" class="option-list"></div>
+    <div class="quiz-actions">
+        <button class="button button-secondary" id="next-question" disabled>Next question</button>
+    </div>
+    <div id="quiz-feedback" class="feedback-box hidden"></div>
+</section>
+
+<section class="panel hidden" id="results-panel">
+    <div class="panel-header">
+        <div>
+            <p class="eyebrow">Results</p>
+            <h2 id="results-score">You scored 0%</h2>
+        </div>
+    </div>
+    <div id="results-summary" class="metric-grid"></div>
+    <div>
+        <h3>Weakest domains from this run</h3>
+        <div id="weak-domains" class="stack-list"></div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% set page_name = "dashboard" %}
+{% block content %}
+<section class="hero">
+    <div>
+        <p class="eyebrow">Sprint Mode</p>
+        <h2>Turn the next few weeks into targeted A+ reps.</h2>
+        <p class="hero-copy">
+            This app is built for fast review: short quizzes, weak-area tracking, quick-flip flashcards,
+            and a cram sheet for the facts that usually need brute-force repetition.
+        </p>
+        <div class="hero-actions">
+            <a class="button button-primary" href="/practice">Start a practice block</a>
+            <a class="button button-secondary" href="/flashcards">Review flashcards</a>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <p class="eyebrow">Study focus</p>
+        <div id="dashboard-summary" class="metric-grid"></div>
+    </div>
+</section>
+
+<section class="panel-grid">
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Domains</p>
+                <h3>What you need locked in</h3>
+            </div>
+        </div>
+        <div class="domain-list">
+            {% for domain in study_pack.domains %}
+            <div class="domain-card">
+                <p class="domain-meta">{{ domain.exam }}</p>
+                <h4>{{ domain.name }}</h4>
+                <p>{{ domain.focus }}</p>
+                <ul>
+                    {% for item in domain.must_know %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+    </article>
+
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Sprint plan</p>
+                <h3>Best use of a short timeline</h3>
+            </div>
+        </div>
+        <div class="stack-list">
+            {% for step in study_pack.sprint_plan %}
+            <div class="stack-item">{{ step }}</div>
+            {% endfor %}
+        </div>
+    </article>
+    
+    <article class="panel">
+        <div class="panel-header">
+            <div>
+                <p class="eyebrow">Glossary</p>
+                <h3>Quick acronym refresh</h3>
+            </div>
+        </div>
+        <div class="glossary-grid">
+            {% for item in study_pack.glossary %}
+            <div class="glossary-card">
+                <strong>{{ item.term }}</strong>
+                <p>{{ item.meaning }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </article>
+</section>
+{% endblock %}
