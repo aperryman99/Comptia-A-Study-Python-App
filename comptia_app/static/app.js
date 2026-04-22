@@ -122,6 +122,15 @@ function initPracticePage() {
 
     const questionHistory = () => readStorage(storageKeys.questionHistory, {});
     const currentSession = () => readStorage(storageKeys.quizHistory, []).length + 1;
+    const normalizedQuestionCount = () => {
+        const minimum = Number(elements.questionCount.min || 5);
+        const maximum = Number(elements.questionCount.max || 600);
+        const parsed = Number(elements.questionCount.value);
+        const safeValue = Number.isFinite(parsed) ? Math.trunc(parsed) : minimum;
+        const clamped = Math.max(minimum, Math.min(safeValue, maximum));
+        elements.questionCount.value = clamped;
+        return clamped;
+    };
 
     const selectedDomains = () =>
         Array.from(elements.domainSelector.querySelectorAll("input:checked")).map((input) => input.value);
@@ -237,7 +246,7 @@ function initPracticePage() {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-                count: Number(elements.questionCount.value),
+                count: normalizedQuestionCount(),
                 domains,
                 recent_history: questionHistory(),
                 current_session: currentSession(),
@@ -260,6 +269,8 @@ function initPracticePage() {
         }
         renderQuestion();
     });
+
+    elements.questionCount.addEventListener("change", normalizedQuestionCount);
 }
 
 function initFlashcardsPage() {

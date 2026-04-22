@@ -19,6 +19,8 @@ def load_json(filename: str) -> dict | list:
 
 study_pack = load_json("study_pack.json")
 question_bank = load_json("questions.json")
+MIN_QUIZ_COUNT = 5
+MAX_QUIZ_COUNT = min(600, len(question_bank))
 
 DIFFICULTY_COOLDOWN = {
     "easy": 5,
@@ -101,7 +103,13 @@ def dashboard():
 
 @app.route("/practice")
 def practice():
-    return render_template("practice.html", study_pack=study_pack)
+    return render_template(
+        "practice.html",
+        study_pack=study_pack,
+        min_quiz_count=MIN_QUIZ_COUNT,
+        max_quiz_count=MAX_QUIZ_COUNT,
+        total_questions=len(question_bank),
+    )
 
 
 @app.route("/flashcards")
@@ -123,7 +131,7 @@ def get_study_pack():
 def get_quiz():
     payload = request.get_json(silent=True) or {}
     requested_domains = payload.get("domains", [])
-    count = max(5, min(int(payload.get("count", 10)), 60))
+    count = max(MIN_QUIZ_COUNT, min(int(payload.get("count", 10)), MAX_QUIZ_COUNT))
     recent_history = payload.get("recent_history", {})
     current_session = int(payload.get("current_session", 0))
 

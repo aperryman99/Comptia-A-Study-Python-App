@@ -12,15 +12,15 @@
     <div class="quiz-setup">
         <div>
             <label for="question-count">Question count</label>
-            <select id="question-count">
-                <option value="10">10 questions</option>
-                <option value="15">15 questions</option>
-                <option value="20">20 questions</option>
-                <option value="25">25 questions</option>
-                <option value="35">35 questions</option>
-                <option value="50">50 questions</option>
-                <option value="60">60 questions</option>
-            </select>
+            <input
+                id="question-count"
+                type="number"
+                min="{{ min_quiz_count }}"
+                max="{{ max_quiz_count }}"
+                step="1"
+                value="25"
+            >
+            <p class="helper-text">Choose any amount from {{ min_quiz_count }} to {{ max_quiz_count }}. Current bank: {{ total_questions }} questions.</p>
         </div>
         <div class="domain-selector" id="domain-selector">
             {% for domain in study_pack.domains %}
